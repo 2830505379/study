@@ -14,7 +14,6 @@ public class MaxSubSeqSum {
                 sum+=data[j];
                 if(sum>max){
                     max=sum;
-                    System.out.println("max:"+max+" begin:"+i+" end:"+j);
                 }
             }
         }
