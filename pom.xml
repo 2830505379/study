@@ -12,5 +12,28 @@
         <module>study-algorithm</module>
     </modules>
 
+    <properties>
+        <!--compile-->
+        <jdk-version>1.8</jdk-version>
+        <project-build-sourceEncoding>utf-8</project-build-sourceEncoding>
 
+    </properties>
+
+    <build>
+    <plugins>
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-compiler-plugin</artifactId>
+            <version>3.3</version>
+            <configuration>
+                <source>${jdk-version}</source>
+                <target>${jdk-version}</target>
+                <compilerArgument>-Xlint:all</compilerArgument>
+                <showWarnings>true</showWarnings>
+                <showDeprecation>true</showDeprecation>
+                <encoding>${project-build-sourceEncoding}</encoding>
+            </configuration>
+        </plugin>
+    </plugins>
+    </build>
 </project>
